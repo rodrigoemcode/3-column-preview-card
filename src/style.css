@@ -3,16 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit:wght@300;400;600&display=swap');
 
 :root{
-    --sedans: hsl(31, 77%, 52%);
-    --suv: hsl(184, 100%, 22%);
-    --luxury: hsl(179, 100%, 13%);
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
 }
 
 body {
     min-height: 100vh;
     display: flex;
-    margin: 0 auto;
-    padding: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,33 +23,33 @@ body {
     text-align: start;
 }
 
-.sedan {
-    background-color: var(--sedans);
+.left-card {
+    background-color: var(--bright-orange);
     width: 13rem;
     height: 23rem;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.suv {
-    background-color: var(--suv);
+.mid-card {
+    background-color: var(--dark-cyan);
     width: 13rem;
     height: 23rem;
 }
 
-.luxury {
-    background-color: var(--luxury);
+.right-card {
+    background-color: var(--very-dark-cyan);
     width: 13rem;
     height: 23rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-h1 {
+h2 {
     color: white;
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Outfit', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin: 30px;
 }
 
@@ -59,7 +57,7 @@ p {
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Outfit', sans-serif;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     display: flex;
     margin: 30px;
     text-align: start;
@@ -68,53 +66,57 @@ p {
 .learn-more {
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Outfit', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     margin: 30px;
+    text-decoration: none;
 }
 
-.sed-btn {
+.left-btn {
     border-radius: 30px;
     border: 1px solid white;
     padding: 10px 20px 10px;
-    color: var(--sedans);
+    color: var(--bright-orange);
+    background-color: white;
 } 
 
-.sed-btn:hover {
+.left-btn:hover {
     border-radius: 30px;
     border: 1px solid white;
     padding: 10px 20px 10px;
     color: white;
-    background-color: var(--sedans);
+    background-color: var(--bright-orange);
 }
-.suv-btn {
+.mid-btn {
     border-radius: 30px;
     border: 1px solid white;
     padding: 10px 20px 10px;
-    color: var(--suv);
+    color: var(--dark-cyan);
+    background-color: white;
 }
 
-.suv-btn:hover {
-    border-radius: 30px;
-    border: 1px solid white;
-    padding: 10px 20px 10px;
-    color: white;
-    background-color: var(--suv);
-}
-
-
-.lux-btn {
-    border-radius: 30px;
-    border: 1px solid white;
-    padding: 10px 20px 10px;
-    color: var(--luxury);
-}
-
-.lux-btn:hover {
+.mid-btn:hover {
     border-radius: 30px;
     border: 1px solid white;
     padding: 10px 20px 10px;
     color: white;
-    background-color: var(--luxury)
+    background-color: var(--dark-cyan);
+}
+
+
+.right-btn {
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 10px 20px 10px;
+    color: var(--very-dark-cyan);
+    background-color: white;
+}
+
+.right-btn:hover {
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 10px 20px 10px;
+    color: white;
+    background-color: var(--very-dark-cyan)
 }
 
 .icon-car {
@@ -125,13 +127,13 @@ p {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 0.8rem;
     text-align: center;
     margin: 20px;
 }
 
 .attribution a {
-    color: var(--sedans);
+    color: var(--bright-orange);
     
 }
 
